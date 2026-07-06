@@ -108,7 +108,7 @@ export function Footer() {
                   alt=""
                   width={images.builderLogo.width}
                   height={images.builderLogo.height}
-                  className="h-7 w-7 object-contain opacity-80 transition-opacity group-hover:opacity-100"
+                  className="h-14 w-14 object-contain opacity-80 transition-opacity group-hover:opacity-100"
                 />
                 <span className="group-hover:underline">{site.builtBy.name}</span>
               </a>
@@ -119,7 +119,7 @@ export function Footer() {
                   alt=""
                   width={images.builderLogo.width}
                   height={images.builderLogo.height}
-                  className="h-7 w-7 object-contain opacity-80"
+                  className="h-14 w-14 object-contain opacity-80"
                 />
                 {site.builtBy.name}
               </span>
