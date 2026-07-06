@@ -1,0 +1,13 @@
+# Netlify configuration for the Simba's Compass site.
+#
+# Netlify auto-detects Next.js and applies its official runtime
+# (@netlify/plugin-nextjs), which handles SSR/prerendering and next/image
+# optimization. No plugin needs to be declared here.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # Next.js 15 needs Node 18.18+. Pin a current LTS for reproducible builds.
+  NODE_VERSION = "20"
