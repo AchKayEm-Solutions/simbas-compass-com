@@ -28,23 +28,22 @@ export function Header() {
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      <div className="container-page flex h-16 items-center justify-between py-3 sm:h-20">
+      <div className="container-page flex h-28 items-center justify-between sm:h-32">
         <Link
           href="/"
-          className="group flex items-center gap-2.5 font-display text-lg text-forest sm:text-xl"
+          className="group flex items-center"
           aria-label={`${site.name} — home`}
         >
-          <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-forest/10 transition-transform duration-500 group-hover:scale-105">
+          <span className="flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl bg-white p-1.5 ring-1 ring-forest/10 transition-transform duration-500 group-hover:scale-105 sm:h-28 sm:w-28">
             <Image
               src={images.logo.src}
-              alt=""
+              alt={`${site.name} logo`}
               width={images.logo.width}
               height={images.logo.height}
-              className="h-9 w-9 object-contain"
+              className="h-full w-full object-contain"
               priority
             />
           </span>
-          <span className="font-semibold tracking-tight">{site.name}</span>
         </Link>
 
         <nav aria-label="Primary" className="hidden md:block">

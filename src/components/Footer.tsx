@@ -16,13 +16,13 @@ export function Footer() {
               className="flex items-center gap-2.5 font-display text-xl text-cream"
               aria-label={`${site.name} — home`}
             >
-              <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-white/20">
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white p-1.5 ring-1 ring-white/20">
                 <Image
                   src={images.logo.src}
                   alt=""
                   width={images.logo.width}
                   height={images.logo.height}
-                  className="h-10 w-10 object-contain"
+                  className="h-full w-full object-contain"
                 />
               </span>
               <span className="font-semibold">{site.name}</span>
