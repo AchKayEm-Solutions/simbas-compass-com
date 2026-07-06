@@ -44,7 +44,7 @@ export const site = {
   // Footer build credit. Set `href` to a URL to make it a link; leave "" for text.
   builtBy: {
     name: "AchKayEm Solutions",
-    href: "",
+    href: "https://achkayem-solutions.com",
   },
 
   // A single flag so the whole site can honestly say details aren't final yet.

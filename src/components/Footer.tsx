@@ -93,19 +93,36 @@ export function Footer() {
           <p>
             © {year} {site.legalName}. All rights reserved.
           </p>
-          <p className="text-cream/45">
-            Built by{" "}
+          <p className="flex items-center gap-2 text-cream/45">
+            <span>Built by</span>
             {site.builtBy.href ? (
               <a
                 href={site.builtBy.href}
                 target="_blank"
                 rel="noreferrer"
-                className="font-medium text-cream/70 underline-offset-4 transition-colors hover:text-cream hover:underline"
+                aria-label={`${site.builtBy.name} (opens in a new tab)`}
+                className="group inline-flex items-center gap-2 font-medium text-cream/70 underline-offset-4 transition-colors hover:text-cream"
               >
-                {site.builtBy.name}
+                <Image
+                  src={images.builderLogo.src}
+                  alt=""
+                  width={images.builderLogo.width}
+                  height={images.builderLogo.height}
+                  className="h-7 w-7 object-contain opacity-80 transition-opacity group-hover:opacity-100"
+                />
+                <span className="group-hover:underline">{site.builtBy.name}</span>
               </a>
             ) : (
-              <span className="font-medium text-cream/70">{site.builtBy.name}</span>
+              <span className="inline-flex items-center gap-2 font-medium text-cream/70">
+                <Image
+                  src={images.builderLogo.src}
+                  alt=""
+                  width={images.builderLogo.width}
+                  height={images.builderLogo.height}
+                  className="h-7 w-7 object-contain opacity-80"
+                />
+                {site.builtBy.name}
+              </span>
             )}
           </p>
         </div>

@@ -61,6 +61,13 @@ export const images = {
     width: 360,
     height: 360,
   },
+  // AchKayEm Solutions (site builder) logo — white version for the dark footer.
+  builderLogo: {
+    src: `${IMG}/achkayem-logo-white.webp`,
+    alt: "AchKayEm Solutions",
+    width: 500,
+    height: 500,
+  },
   // Social share image (Open Graph / Twitter). Reuses the warm meadow photo.
   ogDefault: {
     src: `${IMG}/animal-care.jpg`,
