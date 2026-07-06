@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { nav, site } from "@/data/site";
+import { images } from "@/data/images";
 import { Button } from "./Button";
-import { Compass } from "./Compass";
 import { MobileNav } from "./MobileNav";
 
 export function Header() {
@@ -33,7 +34,16 @@ export function Header() {
           className="group flex items-center gap-2.5 font-display text-lg text-forest sm:text-xl"
           aria-label={`${site.name} — home`}
         >
-          <Compass className="h-8 w-8 text-caramel transition-transform duration-500 group-hover:rotate-45" />
+          <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-forest/10 transition-transform duration-500 group-hover:scale-105">
+            <Image
+              src={images.logo.src}
+              alt=""
+              width={images.logo.width}
+              height={images.logo.height}
+              className="h-9 w-9 object-contain"
+              priority
+            />
+          </span>
           <span className="font-semibold tracking-tight">{site.name}</span>
         </Link>
 

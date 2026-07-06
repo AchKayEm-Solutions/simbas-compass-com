@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { nav, site } from "@/data/site";
-import { Compass } from "./Compass";
+import { images } from "@/data/images";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -15,7 +16,15 @@ export function Footer() {
               className="flex items-center gap-2.5 font-display text-xl text-cream"
               aria-label={`${site.name} — home`}
             >
-              <Compass className="h-8 w-8 text-gold" />
+              <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-white/20">
+                <Image
+                  src={images.logo.src}
+                  alt=""
+                  width={images.logo.width}
+                  height={images.logo.height}
+                  className="h-10 w-10 object-contain"
+                />
+              </span>
               <span className="font-semibold">{site.name}</span>
             </Link>
             <p className="mt-4 leading-relaxed text-cream/70">{site.tagline}</p>

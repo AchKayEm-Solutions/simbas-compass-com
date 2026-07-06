@@ -147,7 +147,15 @@ export default function AboutPage() {
       {/* The meaning behind Simba's Compass */}
       <Section tone="forest">
         <div className="mx-auto max-w-3xl text-center">
-          <Compass className="mx-auto h-14 w-14 text-gold" spin />
+          <span className="mx-auto flex h-24 w-24 items-center justify-center overflow-hidden rounded-full bg-white shadow-lift ring-4 ring-gold/30">
+            <Image
+              src={images.logo.src}
+              alt={images.logo.alt}
+              width={images.logo.width}
+              height={images.logo.height}
+              className="h-20 w-20 object-contain"
+            />
+          </span>
           <h2 className="mt-6 text-3xl text-cream sm:text-4xl">
             The Meaning Behind Simba&apos;s Compass
           </h2>
