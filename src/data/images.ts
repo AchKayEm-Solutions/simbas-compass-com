@@ -19,10 +19,10 @@ export type SiteImage = {
 const IMG = "/images";
 
 export const images = {
-  // Savannah teaching a white shepherd-mix to "shake" on a tree-lined forest path.
+  // Savannah teaching Simba, her white husky, to "shake" on a tree-lined path.
   hero: {
     src: `${IMG}/hero.jpg`,
-    alt: "Savannah training a happy white shepherd-mix dog to shake on a forest path",
+    alt: "Savannah training Simba, her white husky, to shake a paw on a forest path",
     width: 1588,
     height: 2048,
   },
@@ -40,12 +40,12 @@ export const images = {
     width: 1024,
     height: 682,
   },
-  // Reflective black-and-white walk with two dogs — used for the memorial section.
+  // Simba, Savannah's white husky and the dog the company is named for.
   simba: {
     src: `${IMG}/simba.jpg`,
-    alt: "Savannah walking down a quiet tree-lined path with two dogs, in black and white",
-    width: 1462,
-    height: 2048,
+    alt: "Simba, a happy white husky in a blue bandana, sitting at Savannah's feet",
+    width: 1024,
+    height: 682,
   },
   // A real training moment: offering a reward to a focused dog in a field.
   trainingSession: {
