@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Savannah & pup">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3C5A47" />
+      <stop offset="1" stop-color="#2E4636" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.25" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#g)" />
+  <rect width="1200" height="1500" fill="url(#glow)" />
+  <g transform="translate(864, 480)">
+    <g stroke="#DEC17E" stroke-opacity="0.22" fill="none" stroke-width="2">
+      <circle cx="0" cy="0" r="128" />
+      <circle cx="0" cy="0" r="96" stroke-dasharray="4 8" />
+      <path d="M0,-120 L22,-22 L120,0 L22,22 L0,120 L-22,22 L-120,0 L-22,-22 Z"
+        fill="#DEC17E" fill-opacity="0.132" stroke="none" />
+      <path d="M0,-150 L0,150 M-150,0 L150,0" stroke-opacity="0.154" />
+    </g></g>
+  <g transform="translate(240, 1170)">
+    <g stroke="#DEC17E" stroke-opacity="0.12" fill="none" stroke-width="2">
+      <circle cx="0" cy="0" r="128" />
+      <circle cx="0" cy="0" r="96" stroke-dasharray="4 8" />
+      <path d="M0,-120 L22,-22 L120,0 L22,22 L0,120 L-22,22 L-120,0 L-22,-22 Z"
+        fill="#DEC17E" fill-opacity="0.072" stroke="none" />
+      <path d="M0,-150 L0,150 M-150,0 L150,0" stroke-opacity="0.08399999999999999" />
+    </g></g>
+  <text x="600" y="750" text-anchor="middle" dominant-baseline="middle"
+    font-family="Georgia, 'Times New Roman', serif" font-size="72"
+    fill="#DEC17E" fill-opacity="0.9" font-style="italic">Savannah & pup</text>
+  <text x="600" y="834" text-anchor="middle"
+    font-family="system-ui, sans-serif" font-size="34"
+    fill="#ffffff" fill-opacity="0.7" letter-spacing="2">PLACEHOLDER · REPLACE WITH PHOTO</text>
+</svg>

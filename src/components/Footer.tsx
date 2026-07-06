@@ -1,0 +1,94 @@
+import Link from "next/link";
+import { nav, site } from "@/data/site";
+import { Compass } from "./Compass";
+
+export function Footer() {
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="border-t border-forest/10 bg-forest text-cream/85">
+      <div className="container-page py-16">
+        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
+          <div className="max-w-sm">
+            <Link
+              href="/"
+              className="flex items-center gap-2.5 font-display text-xl text-cream"
+              aria-label={`${site.name} — home`}
+            >
+              <Compass className="h-8 w-8 text-gold" />
+              <span className="font-semibold">{site.name}</span>
+            </Link>
+            <p className="mt-4 leading-relaxed text-cream/70">{site.tagline}</p>
+          </div>
+
+          <nav aria-label="Footer">
+            <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-gold/90">
+              Explore
+            </h2>
+            <ul className="mt-4 space-y-2.5">
+              {nav.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-cream/75 transition-colors hover:text-cream"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div>
+            <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-gold/90">
+              Get in touch
+            </h2>
+            <ul className="mt-4 space-y-2.5 text-cream/75">
+              <li>
+                <span className="block text-cream">Email</span>
+                <span>{site.contact.email}</span>
+              </li>
+              <li>
+                <span className="block text-cream">Phone</span>
+                <span>{site.contact.phone}</span>
+              </li>
+              <li className="pt-1">
+                <div className="flex flex-wrap gap-x-4 gap-y-1">
+                  {site.socials.map((s) =>
+                    s.href ? (
+                      <a
+                        key={s.label}
+                        href={s.href}
+                        className="text-cream/75 underline-offset-4 transition-colors hover:text-cream hover:underline"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {s.label}
+                      </a>
+                    ) : (
+                      <span key={s.label} className="text-cream/50">
+                        {s.label}
+                      </span>
+                    )
+                  )}
+                </div>
+                <span className="mt-1 block text-xs text-cream/45">
+                  Contact details coming soon
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-14 flex flex-col gap-2 border-t border-cream/15 pt-6 text-sm text-cream/55 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            © {year} {site.legalName}. All rights reserved.
+          </p>
+          <p className="text-cream/45">
+            Made with care for dogs and their people.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
