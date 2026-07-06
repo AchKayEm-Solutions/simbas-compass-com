@@ -22,15 +22,15 @@ import { images } from "@/data/images";
 const whyPoints = [
   {
     title: "An animal-care foundation",
-    body: "Years spent caring for animals as a vet tech shape a calm, informed, whole-dog approach to training.",
+    body: "Six years as a veterinary assistant shape a calm, informed, whole-dog approach — with a real strength in animals who have medical needs.",
   },
   {
-    title: "Patience over pressure",
-    body: "Training moves at your dog's pace. Confidence is built gently, never forced, and never through shame.",
+    title: "Balanced, individual training",
+    body: "No two dogs are the same, so no two plans are either. Training is tailored to the dog in front of us.",
   },
   {
     title: "Clear, practical guidance",
-    body: "Simple, doable steps that fit real life at home, on walks, and everywhere in between.",
+    body: "Simple, doable steps and consistent structure that fit real life at home, on walks, and everywhere in between.",
   },
   {
     title: "A partnership, not a program",
@@ -49,22 +49,22 @@ export default function HomePage() {
           <Reveal delay={0}>
             <TrustBadge
               icon={<StethoscopeIcon className="h-6 w-6" />}
-              title="5+ years as a vet tech"
-              description="Hands-on veterinary experience caring for animals of all kinds and temperaments."
+              title="6 years as a veterinary assistant"
+              description="Hands-on animal-care experience, with a specialty in pets who have medical needs."
             />
           </Reveal>
           <Reveal delay={80}>
             <TrustBadge
               icon={<BookIcon className="h-6 w-6" />}
-              title="Studying veterinary care"
-              description="Ongoing education deepens a thoughtful, health-aware understanding of dogs."
+              title="Pursuing LVT licensure"
+              description="Currently working toward Licensed Veterinary Technician licensure."
             />
           </Reveal>
           <Reveal delay={160}>
             <TrustBadge
               icon={<PawIcon className="h-6 w-6" />}
-              title="Certification in progress"
-              description="Actively completing a dog training certification to formalize years of practice."
+              title="Certified Dog Trainer in progress"
+              description="Finishing the Certified Dog Trainer course through Liberty K9 Academy."
             />
           </Reveal>
         </div>
@@ -110,8 +110,8 @@ export default function HomePage() {
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading
             eyebrow="How we can help"
-            title="Featured training services"
-            description="A few of the ways Simba's Compass can support you and your dog. Details, availability, and pricing are coming soon."
+            title="Featured services"
+            description="A few of the ways Savannah can support you and your dog — from board & train to boarding, daycare, and pet sitting. Offered through Call of the Wild."
           />
           <Reveal delay={100} className="hidden sm:block">
             <Button href="/services" variant="secondary">

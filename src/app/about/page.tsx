@@ -14,11 +14,11 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "About Savannah",
   description:
-    "Meet Savannah, founder of Simba's Compass — a vet tech with 5+ years of animal care experience and a dog training certification in progress.",
+    "Meet Savannah, founder of Simba's Compass — six years as a veterinary assistant, pursuing LVT licensure, and finishing her Certified Dog Trainer course through Liberty K9 Academy.",
   openGraph: {
     title: "About Savannah | Simba's Compass",
     description:
-      "Meet Savannah — vet tech, lifelong animal lover, and the person behind Simba's Compass dog training.",
+      "Meet Savannah — veterinary assistant of six years, lifelong animal lover, and the person behind Simba's Compass.",
     images: [images.portrait.src],
   },
 };
@@ -26,18 +26,18 @@ export const metadata: Metadata = {
 const journey = [
   {
     icon: <StethoscopeIcon className="h-6 w-6" />,
-    title: "5+ years as a veterinary technician",
-    body: "Working closely with animals every day — reading body language, handling nervous patients with care, and understanding what keeps a dog healthy and calm.",
+    title: "6 years as a veterinary assistant",
+    body: "Working closely with animals every day — reading body language, handling nervous patients with care, and understanding what keeps a dog healthy and calm. She has a particular strength with animals who have medical needs.",
   },
   {
     icon: <BookIcon className="h-6 w-6" />,
-    title: "Ongoing veterinary education",
-    body: "Continuing to study animal care, which grounds her training in a genuine understanding of canine health and behavior.",
+    title: "Pursuing LVT licensure",
+    body: "Currently working toward her Licensed Veterinary Technician (LVT) licensure, deepening an already health-aware understanding of the animals in her care.",
   },
   {
     icon: <PawIcon className="h-6 w-6" />,
-    title: "Dog training certification in progress",
-    body: "Actively pursuing a formal dog training certification to pair years of hands-on experience with up-to-date, ethical methods.",
+    title: "Certified Dog Trainer in progress",
+    body: "Finishing the Certified Dog Trainer course through Liberty K9 Academy — pairing years of hands-on experience with formal, up-to-date training methods.",
   },
 ];
 
@@ -62,10 +62,11 @@ export default function AboutPage() {
           </Reveal>
           <div className="prose-warm space-y-4 text-lg">
             <p>
-              Savannah has spent years doing the quiet, patient work of caring
-              for animals. As a veterinary technician, she&apos;s handled dogs
-              on their best days and their most frightened ones — learning how
-              much a calm presence and a little trust can change an outcome.
+              Savannah has spent six years doing the quiet, patient work of
+              caring for animals. As a veterinary assistant, she&apos;s handled
+              dogs on their best days and their most frightened ones — learning
+              how much a calm presence and a little trust can change an outcome.
+              She has a real strength with animals who have medical needs.
             </p>
             <p>
               That experience is the foundation of Simba&apos;s Compass. Training
@@ -74,9 +75,10 @@ export default function AboutPage() {
               secure, capable, and understood.
             </p>
             <p>
-              She&apos;s continuing her education in veterinary care and
-              completing a dog training certification — because doing this well
-              means always learning, and always putting the dog first.
+              She&apos;s pursuing her Licensed Veterinary Technician (LVT)
+              licensure and finishing her Certified Dog Trainer course through
+              Liberty K9 Academy — because doing this well means always learning,
+              and always putting the animal first.
             </p>
           </div>
         </div>
@@ -105,8 +107,8 @@ export default function AboutPage() {
         </div>
         <Reveal className="mt-8">
           <p className="text-sm italic text-charcoal-muted">
-            Note: the specific certification name and credentials will be added
-            here once confirmed.
+            Savannah offers her services through Call of the Wild, serving the
+            Brainerd Lakes Area.
           </p>
         </Reveal>
       </Section>
@@ -117,16 +119,16 @@ export default function AboutPage() {
           <div>
             <SectionHeading
               eyebrow="Her approach"
-              title="Calm, clear, consistent, and kind"
-              description="A relationship-based way of working that meets dogs — and their people — right where they are."
+              title="Balanced, and built around your dog"
+              description="A balanced way of working that meets each dog — and their people — right where they are. No dog is the same, and no plan should be either."
             />
             <ul className="mt-8 space-y-4">
               {[
-                "Calm and unhurried, so dogs can actually learn",
-                "Clear communication that dogs and owners can both follow",
+                "Balanced methods, tailored to the dog in front of her",
+                "Clear communication and structure both dogs and owners can follow",
+                "Fair and humane — firm when it helps, gentle where it counts",
                 "Consistency that builds real, lasting habits",
-                "Relationship-first, strengthening the bond you already share",
-                "Free of shame — for your dog and for you",
+                "Supportive and free of judgment — for you and your dog",
               ].map((line) => (
                 <li key={line} className="flex items-start gap-3">
                   <Compass className="mt-0.5 h-5 w-5 shrink-0 text-caramel-dark" />
@@ -253,7 +255,7 @@ export default function AboutPage() {
 
       <CTABand
         title={`Want to work with ${site.founder}?`}
-        description="If Savannah's approach sounds like the right fit for your dog, reach out. Booking and full contact details are coming soon."
+        description={`If Savannah's approach sounds like the right fit for your dog, she'd love to help. Booking runs through ${site.partner.name}.`}
       />
     </>
   );

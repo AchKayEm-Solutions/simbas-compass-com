@@ -53,40 +53,38 @@ export function Footer() {
 
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-gold/90">
-              Get in touch
+              Booking & area
             </h2>
             <ul className="mt-4 space-y-2.5 text-cream/75">
               <li>
-                <span className="block text-cream">Email</span>
-                <span>{site.contact.email}</span>
+                <span className="block text-cream">Service area</span>
+                <span>{site.contact.serviceArea}</span>
               </li>
               <li>
-                <span className="block text-cream">Phone</span>
-                <span>{site.contact.phone}</span>
+                <span className="block text-cream">Booking</span>
+                <a
+                  href={site.partner.href}
+                  className="underline-offset-4 transition-colors hover:text-cream hover:underline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Through {site.partner.name}
+                </a>
               </li>
               <li className="pt-1">
                 <div className="flex flex-wrap gap-x-4 gap-y-1">
-                  {site.socials.map((s) =>
-                    s.href ? (
-                      <a
-                        key={s.label}
-                        href={s.href}
-                        className="text-cream/75 underline-offset-4 transition-colors hover:text-cream hover:underline"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {s.label}
-                      </a>
-                    ) : (
-                      <span key={s.label} className="text-cream/50">
-                        {s.label}
-                      </span>
-                    )
-                  )}
+                  {site.socials.map((s) => (
+                    <a
+                      key={s.label}
+                      href={s.href}
+                      className="text-cream/75 underline-offset-4 transition-colors hover:text-cream hover:underline"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {s.label}
+                    </a>
+                  ))}
                 </div>
-                <span className="mt-1 block text-xs text-cream/45">
-                  Contact details coming soon
-                </span>
               </li>
             </ul>
           </div>

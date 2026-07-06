@@ -2,67 +2,55 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
-import { Notice } from "@/components/Notice";
+import { Button } from "@/components/Button";
 import { Compass } from "@/components/Compass";
-import {
-  MailIcon,
-  PhoneIcon,
-  MapPinIcon,
-} from "@/components/Icons";
+import { MapPinIcon, PawIcon } from "@/components/Icons";
 import { site } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact & Booking",
   description:
-    "Get in touch with Simba's Compass about dog training. Booking and full contact details are coming soon.",
+    "Book Simba's Compass through Call of the Wild in the Brainerd Lakes Area — dog training, board & train, boarding, daycare, and pet sitting.",
   openGraph: {
-    title: "Contact | Simba's Compass",
+    title: "Contact & Booking | Simba's Compass",
     description:
-      "Interested in dog training with Simba's Compass? Contact details are coming soon.",
+      "Booking runs through Call of the Wild, serving the Brainerd Lakes Area.",
   },
 };
 
 export default function ContactPage() {
   const details = [
     {
-      icon: <PhoneIcon className="h-6 w-6" />,
-      label: "Phone",
-      value: site.contact.phone,
-      note: site.contact.phoneNote,
-    },
-    {
-      icon: <MailIcon className="h-6 w-6" />,
-      label: "Email",
-      value: site.contact.email,
-      note: site.contact.emailNote,
-    },
-    {
       icon: <MapPinIcon className="h-6 w-6" />,
       label: "Service area",
       value: site.contact.serviceArea,
       note: site.contact.serviceAreaNote,
+    },
+    {
+      icon: <PawIcon className="h-6 w-6" />,
+      label: "Specialties",
+      value: "Board & train · Medical-needs care",
+      note: "Where Savannah does her best work",
     },
   ];
 
   return (
     <>
       <PageHero
-        eyebrow="Contact"
+        eyebrow="Contact & Booking"
         title="Let's find your way together"
-        description="Simba's Compass is getting set up, and full booking and contact details are on the way. Here's where they'll live."
-      >
-        <Notice>Booking and contact details coming soon.</Notice>
-      </PageHero>
+        description={`Savannah offers her services through ${site.partner.name}, who handle booking and scheduling for the ${site.contact.serviceArea}.`}
+      />
 
       <Section tone="cream">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-          {/* Contact details */}
+          {/* Details */}
           <div>
-            <h2 className="text-2xl">Get in touch</h2>
+            <h2 className="text-2xl">How to reach Savannah</h2>
             <p className="prose-warm mt-3 max-w-lg">
-              Once everything&apos;s ready, you&apos;ll be able to reach Savannah
-              through the details below. For now, these are placeholders — check
-              back soon.
+              The easiest way to book Simba&apos;s Compass — for training,
+              boarding, daycare, or pet sitting — is through {site.partner.name}.
+              Their team handles availability, scheduling, and pricing.
             </p>
 
             <ul className="mt-8 space-y-4">
@@ -88,49 +76,48 @@ export default function ContactPage() {
               ))}
             </ul>
 
-            {/* Socials */}
+            {/* Online */}
             <div className="mt-8">
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-charcoal-muted">
                 Find us online
               </h3>
               <div className="mt-3 flex flex-wrap gap-3">
-                {site.socials.map((s) =>
-                  s.href ? (
-                    <a
-                      key={s.label}
-                      href={s.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="rounded-full bg-cream-50 px-4 py-2 text-sm font-medium text-forest ring-1 ring-forest/15 transition hover:-translate-y-0.5 hover:ring-forest/40"
-                    >
-                      {s.label}
-                    </a>
-                  ) : (
-                    <span
-                      key={s.label}
-                      className="rounded-full bg-cream-50/60 px-4 py-2 text-sm text-charcoal-muted ring-1 ring-dashed ring-forest/15"
-                    >
-                      {s.label}{" "}
-                      <span className="text-charcoal-muted/70">· soon</span>
-                    </span>
-                  )
-                )}
+                {site.socials.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-full bg-cream-50 px-4 py-2 text-sm font-medium text-forest ring-1 ring-forest/15 transition hover:-translate-y-0.5 hover:ring-forest/40"
+                  >
+                    {s.label}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
 
-          {/* CTA panel */}
+          {/* Booking panel */}
           <Reveal from="right">
             <div className="sticky top-28 overflow-hidden rounded-4xl bg-forest p-8 text-cream shadow-lift sm:p-10">
               <Compass className="h-12 w-12 text-gold" spin />
-              <h2 className="mt-6 text-2xl text-cream">
-                Interested in training?
-              </h2>
+              <h2 className="mt-6 text-2xl text-cream">Ready to book?</h2>
               <p className="mt-3 leading-relaxed text-cream/80">
-                Contact details will be added soon. When they&apos;re live,
-                reaching out will be the first step toward a calmer, more
-                confident dog — and a stronger bond between you.
+                {site.partner.blurb} It&apos;s the first step toward a calmer,
+                more confident dog — and a stronger bond between you.
               </p>
+              <div className="mt-6">
+                <Button
+                  href={site.partner.href}
+                  variant="secondary"
+                  size="lg"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-full"
+                >
+                  Book through {site.partner.name}
+                </Button>
+              </div>
               <div className="mt-6 rounded-2xl bg-cream/10 p-4 text-sm text-cream/75 ring-1 ring-cream/15">
                 <p className="font-semibold text-cream">What to expect</p>
                 <p className="mt-1">
@@ -139,8 +126,7 @@ export default function ContactPage() {
                 </p>
               </div>
               <p className="mt-6 text-xs text-cream/50">
-                {site.legalName} · Serving {site.contact.serviceArea.toLowerCase()}{" "}
-                (details coming soon)
+                {site.legalName} · Serving the {site.contact.serviceArea}
               </p>
             </div>
           </Reveal>

@@ -7,42 +7,43 @@ import { Reveal } from "@/components/Reveal";
 import { CTABand } from "@/components/CTABand";
 import { Compass } from "@/components/Compass";
 import { images } from "@/data/images";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Training Philosophy",
   description:
-    "The Simba's Compass approach: patient, practical training that builds confidence, clear communication, and a stronger relationship between dogs and their people.",
+    "The Simba's Compass approach: balanced training catered to the dog in front of us — clear communication, structure, and confidence, tailored to each individual dog.",
   openGraph: {
     title: "Training Philosophy | Simba's Compass",
     description:
-      "Patient, practical, relationship-based dog training that meets dogs where they are — without shame or pressure.",
+      "Balanced dog training, tailored to the dog in front of us. No two dogs are the same, so no two plans are either.",
   },
 };
 
 const principles = [
   {
-    title: "Patient and practical",
-    body: "Real training happens in real life. The focus is on simple, doable steps that fit your daily routine — not drills that only work in a quiet room.",
+    title: "Balanced and individual",
+    body: "No single method fits every dog. We draw on a full, fair toolkit and build the plan around the dog in front of us — because no two dogs are the same.",
   },
   {
-    title: "Clear communication",
-    body: "Dogs thrive on consistency. A big part of the work is helping you send signals your dog can actually understand, so everyone's on the same page.",
+    title: "Clear communication and structure",
+    body: "Dogs thrive when they know what's expected. Consistent, understandable communication and steady structure help everyone stay on the same page.",
+  },
+  {
+    title: "Fair and humane",
+    body: "Clear boundaries and meaningful rewards, always with your dog's wellbeing first. Firm when it helps, gentle where it counts — never harsh for its own sake.",
   },
   {
     title: "Building confidence",
-    body: "Many challenges ease when a dog feels more secure. Sessions aim to grow confidence gently, giving your dog room to succeed at their own pace.",
-  },
-  {
-    title: "A stronger relationship",
-    body: "The bond between you and your dog is the real foundation. Training is a way to deepen that relationship, not replace it with obedience for its own sake.",
+    body: "Many challenges ease when a dog feels more secure. Sessions give your dog room to succeed and grow steadier at their own pace.",
   },
   {
     title: "Meeting dogs where they are",
     body: "Every dog arrives with their own history, temperament, and pace. Plans start from who your dog is today — not who they 'should' be.",
   },
   {
-    title: "No shame — for anyone",
-    body: "Owners are never made to feel judged. This is a supportive, encouraging space where questions are welcome and progress is celebrated.",
+    title: "No shame — for owners",
+    body: "You're never made to feel judged. This is a supportive space where questions are welcome and progress is celebrated.",
   },
 ];
 
@@ -51,8 +52,8 @@ export default function PhilosophyPage() {
     <>
       <PageHero
         eyebrow="Philosophy"
-        title="How we approach training"
-        description="A calm, thoughtful way of working that puts your dog's wellbeing — and your confidence as an owner — at the center."
+        title="Balanced training, built around the dog in front of us"
+        description="No dog is the same, and no training method should be either. The approach is tailored to each individual dog — practical, fair, and grounded in real animal-care experience."
       />
 
       {/* Lead statement + photo */}
@@ -61,14 +62,15 @@ export default function PhilosophyPage() {
           <div>
             <SectionHeading
               eyebrow="The short version"
-              title="Kind, clear, and grounded in trust"
-              description="Training should feel supportive, not stressful. The aim is steady progress you can actually maintain — and a dog who feels safe learning with you."
+              title="One dog at a time"
+              description="Savannah trains with a balanced approach, using the full range of fair, humane tools and matching them to the dog in front of her."
             />
             <p className="prose-warm mt-6">
-              Drawing on years of animal-care experience, the approach stays
-              gentle and observant: watching how your dog responds, adjusting as
-              you go, and building on small wins. It&apos;s about direction and
-              guidance — helping your team find its way, one step at a time.
+              Drawing on six years of animal-care experience, the work stays
+              observant and adaptable: reading how your dog responds, adjusting
+              as you go, and building steady progress with clear structure and
+              meaningful rewards. It&apos;s about direction and guidance —
+              helping your team find its way, one step at a time.
             </p>
           </div>
           <Reveal from="right">
@@ -127,7 +129,7 @@ export default function PhilosophyPage() {
 
       <CTABand
         title="Does this approach sound like your kind of thing?"
-        description="If a patient, relationship-first style feels right for you and your dog, let's talk. Contact details are coming soon."
+        description={`If a balanced, individual style feels right for you and your dog, Savannah would love to help. Booking runs through ${site.partner.name}.`}
       />
     </>
   );

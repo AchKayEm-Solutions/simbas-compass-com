@@ -1,9 +1,8 @@
 // -----------------------------------------------------------------------------
-// Training services.
+// Services offered by Savannah through Call of the Wild.
 //
-// These are EDITABLE PLACEHOLDERS until Savannah confirms her real offerings,
-// availability, and pricing. Titles and descriptions are safe, non-committal,
-// and make no guarantees. Update freely.
+// Booking, availability, and pricing are handled by Call of the Wild
+// (see site.partner). Update copy freely as offerings evolve.
 // -----------------------------------------------------------------------------
 
 export type Service = {
@@ -11,72 +10,68 @@ export type Service = {
   title: string;
   description: string;
   bestFor: string;
-  status: string; // pricing/availability placeholder
+  status: string;
+  // Highlights the areas Savannah personally specializes in.
+  specialty?: boolean;
 };
 
 export const services: Service[] = [
   {
-    slug: "puppy-foundations",
-    title: "Puppy Foundations",
+    slug: "board-and-train",
+    title: "Board & Train",
     description:
-      "Gentle early guidance for the big first months — socialization, handling, and the everyday habits that set a puppy up to feel secure.",
-    bestFor: "New puppies and first-time puppy owners",
-    status: "Details coming soon",
+      "Your dog stays with us for an immersive stretch of hands-on training and comes home with real-world skills and steady habits. This is where Savannah does her best work.",
+    bestFor: "Owners who want focused, live-in training progress",
+    status: "Book through Call of the Wild",
+    specialty: true,
   },
   {
-    slug: "basic-obedience",
-    title: "Basic Obedience",
+    slug: "medical-needs-care",
+    title: "Medical-Needs Boarding & Pet Sitting",
     description:
-      "Clear, kind fundamentals like sit, down, stay, and reliable recall, taught in a way that keeps training calm and enjoyable for both of you.",
-    bestFor: "Dogs of any age starting their training journey",
-    status: "Details coming soon",
+      "Attentive boarding and pet sitting for animals with medical needs, backed by Savannah's years of veterinary-assistant experience — medications, monitoring, and careful, informed care.",
+    bestFor: "Pets needing medication, monitoring, or extra medical attention",
+    status: "Book through Call of the Wild",
+    specialty: true,
   },
   {
-    slug: "leash-manners",
-    title: "Leash Manners",
+    slug: "dog-training",
+    title: "Dog Training",
     description:
-      "Practical help for calmer walks — reducing pulling and building focus so time on the leash feels relaxed instead of stressful.",
-    bestFor: "Dogs who pull, lunge, or struggle to settle on walks",
-    status: "Details coming soon",
+      "Personalized training built around your dog and your goals, using a balanced approach that meets each dog exactly where they are.",
+    bestFor: "Dogs and owners working toward specific goals",
+    status: "Book through Call of the Wild",
   },
   {
-    slug: "confidence-building",
-    title: "Confidence Building",
+    slug: "boarding",
+    title: "Boarding",
     description:
-      "Patient, low-pressure work that helps a hesitant dog build trust in new places, people, and experiences, at their own pace.",
-    bestFor: "Shy, nervous, or under-socialized dogs",
-    status: "Details coming soon",
+      "A safe, attentive place for your dog to stay while you're away, with care shaped around their routine, comfort, and individual needs.",
+    bestFor: "Travel, work trips, and time away from home",
+    status: "Book through Call of the Wild",
   },
   {
-    slug: "household-manners",
-    title: "Household Manners",
+    slug: "daycare",
+    title: "Daycare",
     description:
-      "Everyday living skills — greeting guests politely, settling on a mat, and the small routines that make home life smoother.",
-    bestFor: "Families who want a calmer, more settled home",
-    status: "Details coming soon",
+      "Supervised daytime care and activity that keeps your dog engaged, exercised, and comfortable while your day gets busy.",
+    bestFor: "Busy weekdays and social, active dogs",
+    status: "Book through Call of the Wild",
   },
   {
-    slug: "crate-training-support",
-    title: "Crate Training Support",
+    slug: "in-home-pet-sitting",
+    title: "In-Home Pet Sitting",
     description:
-      "Compassionate guidance to help a dog see the crate as a safe, restful space, built on comfort rather than pressure.",
-    bestFor: "Puppies and dogs new to crate or den routines",
-    status: "Details coming soon",
+      "Care for your pets in the comfort of their own home, keeping their environment and routine familiar and low-stress while you're away.",
+    bestFor: "Pets who do best in their own space",
+    status: "Book through Call of the Wild",
   },
   {
-    slug: "enrichment-guidance",
-    title: "Enrichment Guidance",
+    slug: "drop-in-visits",
+    title: "Drop-In Visits",
     description:
-      "Simple, sustainable ideas to keep a dog's mind and body engaged, channeling natural energy into healthy, satisfying outlets.",
-    bestFor: "High-energy or easily bored dogs",
-    status: "Details coming soon",
-  },
-  {
-    slug: "one-on-one-sessions",
-    title: "One-on-One Sessions",
-    description:
-      "Focused, personalized time built around your dog's specific goals and your daily routine, at a pace that works for your family.",
-    bestFor: "Owners who want tailored, individual attention",
-    status: "Details coming soon",
+      "Quick check-ins for feeding, potty breaks, playtime, and companionship when your pet just needs someone to stop by.",
+    bestFor: "Shorter absences and daily check-ins",
+    status: "Book through Call of the Wild",
   },
 ];

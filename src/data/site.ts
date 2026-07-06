@@ -24,22 +24,26 @@ export const site = {
       "Compassionate dog training focused on trust, confidence, and clear communication between dogs and their people.",
   },
 
-  // PLACEHOLDER contact details — replace with real values when confirmed.
   contact: {
-    phone: "(000) 000-0000",
-    phoneNote: "Placeholder — real number coming soon",
-    email: "hello@simbas-compass.com",
-    emailNote: "Placeholder — real address coming soon",
-    serviceArea: "Your local area",
-    serviceAreaNote: "Placeholder — service area coming soon",
+    serviceArea: "Brainerd Lakes Area",
+    serviceAreaNote: "Central Minnesota",
   },
 
-  // PLACEHOLDER social links. Set `href` to a real URL to activate a link;
-  // leave as "" to render it as "coming soon".
+  // Savannah offers her services through Call of the Wild, who handle booking
+  // and scheduling. This is the primary way clients reach her for now.
+  partner: {
+    name: "Call of the Wild",
+    href: "https://www.facebook.com/share/1D9njYaLL8/?mibextid=wwXIfr",
+    blurb:
+      "Simba's Compass services are offered through Call of the Wild, who handle booking, availability, and scheduling.",
+  },
+
   socials: [
-    { label: "Instagram", href: "", handle: "@simbascompass" },
-    { label: "Facebook", href: "", handle: "Simba's Compass" },
-    { label: "TikTok", href: "", handle: "@simbascompass" },
+    {
+      label: "Call of the Wild on Facebook",
+      href: "https://www.facebook.com/share/1D9njYaLL8/?mibextid=wwXIfr",
+      handle: "Call of the Wild",
+    },
   ],
 
   // Footer build credit. Set `href` to a URL to make it a link; leave "" for text.

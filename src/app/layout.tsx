@@ -33,11 +33,13 @@ export const metadata: Metadata = {
   authors: [{ name: site.founder }],
   keywords: [
     "dog training",
-    "puppy training",
-    "positive reinforcement",
-    "obedience",
-    "confidence building",
-    "leash manners",
+    "balanced dog training",
+    "board and train",
+    "dog boarding",
+    "dog daycare",
+    "in-home pet sitting",
+    "Brainerd Lakes Area",
+    "medical needs pet care",
     site.legalName,
   ],
   openGraph: {

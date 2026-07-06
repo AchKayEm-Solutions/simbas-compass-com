@@ -43,7 +43,7 @@ export function Hero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button href="/services" size="lg">
-              View Training Services
+              View Services
             </Button>
             <Button href="/about" variant="secondary" size="lg">
               Meet Savannah
@@ -51,7 +51,7 @@ export function Hero() {
           </div>
 
           <p className="mt-6 text-sm text-charcoal-muted">
-            Rooted in 5+ years of hands-on veterinary care experience.
+            Rooted in 6 years of hands-on veterinary-assistant experience.
           </p>
         </div>
 
@@ -77,8 +77,8 @@ export function Hero() {
           <div className="absolute -bottom-4 left-2 flex items-center gap-3 rounded-2xl bg-cream-50/95 px-4 py-3 shadow-card ring-1 ring-forest/10 backdrop-blur sm:left-6">
             <Compass className="h-8 w-8 text-caramel" />
             <div className="text-left">
-              <p className="text-sm font-semibold text-forest">Vet tech background</p>
-              <p className="text-xs text-charcoal-muted">Certification in progress</p>
+              <p className="text-sm font-semibold text-forest">Veterinary-assistant background</p>
+              <p className="text-xs text-charcoal-muted">Pursuing LVT licensure</p>
             </div>
           </div>
         </div>

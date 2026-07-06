@@ -147,17 +147,26 @@ vercel --prod   # production deploy
 
 ---
 
-## Still to confirm (placeholders in the site)
+## Confirmed details (in `src/data/*`)
 
-These are intentionally left as placeholders until confirmed:
+- **Founder:** Savannah — 6 years as a veterinary assistant, pursuing LVT
+  (Licensed Veterinary Technician) licensure, finishing the Certified Dog
+  Trainer course through Liberty K9 Academy.
+- **Service area:** Brainerd Lakes Area (central Minnesota).
+- **Services:** board & train (specialty), dog training, boarding, daycare,
+  in-home pet sitting, drop-in visits, and medical-needs care (specialty).
+- **Booking:** handled by **Call of the Wild** (`site.partner`) — the site links
+  out to their Facebook page for scheduling.
+- **Approach:** balanced training, tailored to the dog in front of us.
+- **Story:** Simba (living — Savannah's guiding compass) and Spur (in memoriam).
 
-- Service area / city
-- Final list of services + availability + pricing
-- Exact certification name and wording
-- Phone, email, and social links
-- Any testimonials (none are shown until real ones exist)
+Still open / not shown until provided:
 
-Update them in `src/data/*` when ready.
+- Direct phone/email (booking currently routes through Call of the Wild)
+- Testimonials (none shown until real ones exist)
+
+Update everything in `src/data/site.ts`, `src/data/services.ts`, and
+`src/data/images.ts`.
 
 ---
 

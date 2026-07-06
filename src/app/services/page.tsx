@@ -4,17 +4,19 @@ import { Section } from "@/components/Section";
 import { ServiceCard } from "@/components/ServiceCard";
 import { Reveal } from "@/components/Reveal";
 import { Notice } from "@/components/Notice";
+import { Button } from "@/components/Button";
 import { CTABand } from "@/components/CTABand";
 import { services } from "@/data/services";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Training Services",
+  title: "Services",
   description:
-    "Explore dog training services from Simba's Compass — from puppy foundations and basic obedience to leash manners, confidence building, and one-on-one sessions.",
+    "Dog training, boarding, daycare, in-home pet sitting, and drop-in visits from Savannah at Simba's Compass — including board & train and specialized care for pets with medical needs. Booked through Call of the Wild.",
   openGraph: {
-    title: "Training Services | Simba's Compass",
+    title: "Services | Simba's Compass",
     description:
-      "Puppy foundations, obedience, leash manners, confidence building, and more. Details and pricing coming soon.",
+      "Board & train, boarding, daycare, pet sitting, and more — offered through Call of the Wild in the Brainerd Lakes Area.",
   },
 };
 
@@ -23,12 +25,10 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Services"
-        title="Training built around your dog"
-        description="Every dog and household is a little different. These are some of the ways Simba's Compass can help — a starting point for a plan that fits you."
+        title="Care and training built around your dog"
+        description={`Savannah offers her services through ${site.partner.name}, serving the ${site.contact.serviceArea}. She specializes in board & train and in caring for pets with medical needs.`}
       >
-        <Notice>
-          Service details, availability, and pricing are coming soon.
-        </Notice>
+        <Notice>Booking and scheduling are handled by {site.partner.name}.</Notice>
       </PageHero>
 
       <Section tone="cream">
@@ -41,25 +41,31 @@ export default function ServicesPage() {
         </div>
 
         <Reveal className="mt-14">
-          <div className="rounded-4xl border border-dashed border-forest/20 bg-cream-50/60 p-8 text-center sm:p-10">
-            <h2 className="text-2xl">Don&apos;t see quite what you need?</h2>
+          <div className="rounded-4xl border border-forest/10 bg-cream-50 p-8 text-center shadow-card sm:p-10">
+            <h2 className="text-2xl">Ready to book?</h2>
             <p className="prose-warm mx-auto mt-3 max-w-xl">
-              These offerings are a flexible starting point, not a fixed menu.
-              Training can be shaped around your dog&apos;s specific needs and
-              your goals — the best fit is something we&apos;ll figure out
-              together.
+              All scheduling, availability, and pricing run through{" "}
+              {site.partner.name}. Visit their page to book your dog in or to ask
+              about the right fit — including board & train and specialized care
+              for pets with medical needs.
             </p>
-            <p className="mt-5 text-sm italic text-charcoal-muted">
-              Services shown here are editable placeholders and may change as
-              Savannah finalizes her offerings.
-            </p>
+            <div className="mt-6 flex justify-center">
+              <Button
+                href={site.partner.href}
+                size="lg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book through {site.partner.name}
+              </Button>
+            </div>
           </div>
         </Reveal>
       </Section>
 
       <CTABand
         title="Curious which service fits your dog?"
-        description="Reach out and we can talk through where your dog is now and where you'd like to go. Booking and pricing details are coming soon."
+        description={`Savannah can help you land on the right fit — from board & train to boarding, daycare, and pet sitting. Booking runs through ${site.partner.name}.`}
       />
     </>
   );
