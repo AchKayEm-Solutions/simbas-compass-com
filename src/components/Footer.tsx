@@ -28,6 +28,9 @@ export function Footer() {
               <span className="font-semibold">{site.name}</span>
             </Link>
             <p className="mt-4 leading-relaxed text-cream/70">{site.tagline}</p>
+            <p className="mt-3 text-sm italic text-cream/55">
+              &ldquo;{site.motto}&rdquo;
+            </p>
           </div>
 
           <nav aria-label="Footer">

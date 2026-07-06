@@ -11,6 +11,7 @@ export const site = {
   name: "Simba's Compass",
   legalName: "Simba's Compass, LLC",
   tagline: "Dog training rooted in patience, trust, and animal care experience.",
+  motto: "In honor of the dogs who guide us — and the ones who change us.",
   // Used for absolute URLs in metadata / Open Graph. Update to the real domain
   // once it's live on Vercel.
   url: "https://simbas-compass.com",

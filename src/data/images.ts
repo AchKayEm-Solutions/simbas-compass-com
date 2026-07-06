@@ -40,12 +40,19 @@ export const images = {
     width: 1024,
     height: 682,
   },
-  // Simba, Savannah's white husky and the dog the company is named for.
+  // Simba, Savannah's white husky and the living dog the company is named for.
   simba: {
     src: `${IMG}/simba.jpg`,
     alt: "Simba, a happy white husky in a blue bandana, sitting at Savannah's feet",
     width: 1024,
     height: 682,
+  },
+  // Spur, the rescue dog who reshaped Savannah as a trainer (1 in memoriam).
+  spur: {
+    src: `${IMG}/spur.jpg`,
+    alt: "Spur, a red rescue dog, gazing up affectionately at Savannah on a forest path",
+    width: 683,
+    height: 1024,
   },
   // A real training moment: offering a reward to a focused dog in a field.
   trainingSession: {

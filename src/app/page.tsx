@@ -84,10 +84,11 @@ export default function HomePage() {
             />
             <div className="prose-warm mt-6 space-y-4">
               <p>
-                The name carries meaning. Simba was Savannah&apos;s own dog, and
-                the bond they shared is at the heart of this work. The compass
-                stands for guidance and direction — helping each dog and owner
-                find their way forward, together.
+                The name carries meaning. Simba is Savannah&apos;s own dog — the
+                steady companion who has been her &ldquo;guiding compass&rdquo;
+                through some of her hardest years. The compass stands for
+                guidance and direction: helping each dog and owner find their way
+                forward, together.
               </p>
               <p>
                 Whether you&apos;re raising a new puppy or working through
@@ -173,14 +174,17 @@ export default function HomePage() {
             </h2>
             <div className="mt-5 space-y-4 text-lg leading-relaxed text-cream/80">
               <p>
-                Simba was Savannah&apos;s dog and constant companion. He passed
-                away a couple of years ago, but the loyalty, love, and trust he
-                represented still guide this work every day.
+                Simba is Savannah&apos;s dog, and the reason for the name. She
+                first began training him as an assistance dog, but he was
+                medically retired young because of health challenges of his own.
+                Today he&apos;s a devoted emotional support dog who still
+                performs tasks at home.
               </p>
               <p>
-                Naming the company after him felt right — a quiet way to carry
-                that bond forward and to honor the relationship every dog and
-                owner deserves.
+                For the last six years he has been her guiding compass — steady
+                by her side through her darkest days. That partnership is the
+                heart of how she trains: with patience, trust, and deep respect
+                for what a dog gives us.
               </p>
             </div>
             <div className="mt-8">
@@ -202,7 +206,7 @@ export default function HomePage() {
                 />
               </div>
               <figcaption className="mt-3 text-center text-sm italic text-cream/60">
-                In memory of Simba — the reason for the name.
+                Simba — Savannah&apos;s guiding compass.
               </figcaption>
             </figure>
           </Reveal>

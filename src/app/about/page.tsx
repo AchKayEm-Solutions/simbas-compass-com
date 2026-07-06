@@ -161,25 +161,25 @@ export default function AboutPage() {
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-cream/80">
             <p>
-              Simba was Savannah&apos;s dog. He passed away a couple of years
-              ago, but his memory represents everything this work is about:
-              loyalty, love, and the quiet, powerful bond between a person and
-              their dog.
+              Simba is Savannah&apos;s own dog. She first trained him as an
+              assistance dog, but he was medically retired young because of his
+              own health challenges. He has since become a devoted emotional
+              support dog who still works quietly at home — and for the last six
+              years, he has been her guiding compass through her darkest days.
             </p>
             <p>
-              The compass represents guidance and direction — a way of helping
-              each dog-and-owner team find their footing and keep moving forward
-              with confidence.
+              That is what the compass stands for here: guidance, direction, and
+              steady companionship — the things a good dog gives us, and the
+              things thoughtful training helps build between you and yours.
             </p>
             <p className="font-display text-xl italic text-gold">
-              Together, they capture the whole idea: honoring the bond, and
-              helping you find your way.
+              &ldquo;{site.motto}&rdquo;
             </p>
           </div>
         </div>
       </Section>
 
-      {/* Simba portrait */}
+      {/* Simba portrait — the living guiding compass */}
       <Section tone="cream" spacing="md">
         <div className="mx-auto max-w-2xl">
           <Reveal>
@@ -195,8 +195,56 @@ export default function AboutPage() {
                 />
               </div>
               <figcaption className="mt-3 flex items-center justify-center gap-2 text-center text-sm italic text-charcoal-muted">
+                <Compass className="h-4 w-4 text-caramel" />
+                Simba — Savannah&apos;s guiding compass.
+              </figcaption>
+            </figure>
+          </Reveal>
+        </div>
+      </Section>
+
+      {/* Remembering Spur — the dog who changed her */}
+      <Section tone="sage">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <div>
+            <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-caramel-dark">
+              <span className="h-px w-6 bg-caramel/60" aria-hidden="true" />
+              And the ones who change us
+            </span>
+            <h2 className="mt-4 text-3xl sm:text-4xl">Remembering Spur</h2>
+            <div className="prose-warm mt-5 space-y-4">
+              <p>
+                Spur came to Savannah as a Northern Lakes Rescue foster — a dog
+                with big behavioral challenges who had spent three and a half
+                years in rescue, including professional training with Liberty K9,
+                waiting for a home. She began fostering him in June 2025 and soon
+                realized his forever home was already right where he was. She
+                adopted him that October.
+              </p>
+              <p>
+                Their time together was short. Spur passed away on May 29, 2026,
+                from a suspected brain tumor. But he was a turning point in
+                Savannah&apos;s training journey — teaching her patience,
+                structure, and just how much love a behavioral dog can hold. He
+                will always be part of who she is as a trainer.
+              </p>
+            </div>
+          </div>
+          <Reveal from="right">
+            <figure>
+              <div className="overflow-hidden rounded-4xl shadow-card ring-1 ring-forest/5">
+                <Image
+                  src={images.spur.src}
+                  alt={images.spur.alt}
+                  width={images.spur.width}
+                  height={images.spur.height}
+                  sizes="(min-width:1024px) 40vw, 90vw"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 flex items-center justify-center gap-2 text-center text-sm italic text-charcoal-muted">
                 <HeartIcon className="h-4 w-4 text-caramel" />
-                In loving memory of Simba.
+                In loving memory of Spur.
               </figcaption>
             </figure>
           </Reveal>
