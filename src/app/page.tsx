@@ -184,11 +184,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="mt-8">
-              <Button
-                href="/about"
-                variant="secondary"
-                className="bg-cream/10 text-cream ring-cream/20 hover:bg-cream/20"
-              >
+              <Button href="/about" variant="secondaryLight">
                 The meaning behind Simba&apos;s Compass
               </Button>
             </div>

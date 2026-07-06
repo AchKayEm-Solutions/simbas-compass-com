@@ -94,7 +94,19 @@ export function Footer() {
             © {year} {site.legalName}. All rights reserved.
           </p>
           <p className="text-cream/45">
-            Made with care for dogs and their people.
+            Built by{" "}
+            {site.builtBy.href ? (
+              <a
+                href={site.builtBy.href}
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-cream/70 underline-offset-4 transition-colors hover:text-cream hover:underline"
+              >
+                {site.builtBy.name}
+              </a>
+            ) : (
+              <span className="font-medium text-cream/70">{site.builtBy.name}</span>
+            )}
           </p>
         </div>
       </div>

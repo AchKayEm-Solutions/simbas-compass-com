@@ -41,6 +41,12 @@ export const site = {
     { label: "TikTok", href: "", handle: "@simbascompass" },
   ],
 
+  // Footer build credit. Set `href` to a URL to make it a link; leave "" for text.
+  builtBy: {
+    name: "AchKayEm Solutions",
+    href: "",
+  },
+
   // A single flag so the whole site can honestly say details aren't final yet.
   detailsComingSoon: true,
 } as const;

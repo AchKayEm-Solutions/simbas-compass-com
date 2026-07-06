@@ -34,7 +34,7 @@ export function CTABand({
               <Button href="/contact" variant="secondary" size="lg">
                 Contact Simba&apos;s Compass
               </Button>
-              <Button href="/services" variant="ghost" size="lg" className="text-cream hover:bg-cream/10 hover:text-cream">
+              <Button href="/services" variant="ghostLight" size="lg">
                 View training services
               </Button>
             </div>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { type ComponentProps, type ReactNode } from "react";
 
-type Variant = "primary" | "secondary" | "ghost";
+type Variant = "primary" | "secondary" | "secondaryLight" | "ghost" | "ghostLight";
 type Size = "md" | "lg";
 
 const base =
@@ -12,7 +12,12 @@ const variants: Record<Variant, string> = {
     "bg-forest text-cream shadow-soft hover:bg-forest-light hover:shadow-lift hover:-translate-y-0.5",
   secondary:
     "bg-cream text-forest ring-1 ring-forest/25 hover:ring-forest/50 hover:bg-cream-50 hover:-translate-y-0.5",
+  // Translucent light button for use on dark (forest) backgrounds.
+  secondaryLight:
+    "bg-cream/10 text-cream ring-1 ring-cream/25 hover:bg-cream/20 hover:-translate-y-0.5",
   ghost: "text-forest hover:text-caramel-dark hover:bg-forest/5",
+  // Ghost styling for use on dark (forest) backgrounds.
+  ghostLight: "text-cream hover:bg-cream/10 hover:text-cream",
 };
 
 const sizes: Record<Size, string> = {
