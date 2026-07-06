@@ -4,8 +4,7 @@ A warm, modern marketing site for **Simba's Compass, LLC**, a compassionate dog
 training company founded by Savannah.
 
 Built as a static, zero-config Next.js site — no forms, logins, payments, booking,
-or backend (yet). Just a polished, trustworthy first version ready to deploy to
-Vercel.
+or backend (yet). Just a polished, trustworthy first version, deployed on Netlify.
 
 > _"Helping dogs and their people find their way together."_
 
@@ -122,28 +121,40 @@ npm run images:placeholders
 
 ---
 
-## Deploying to Vercel
+## Deploying to Netlify
 
-This project is zero-config on Vercel.
+This project is deployed on **Netlify** and configured via
+[`netlify.toml`](netlify.toml) (build command + Node version). Netlify
+auto-detects Next.js and applies its official runtime (`@netlify/plugin-nextjs`),
+which handles prerendering and `next/image` optimization.
 
-1. Push the repo to GitHub/GitLab/Bitbucket.
-2. In [Vercel](https://vercel.com/new), **Import** the repository.
-3. Framework preset auto-detects **Next.js** — no settings to change.
-   - Build command: `next build`
-   - Output: handled automatically
-4. Click **Deploy**.
+1. Push the repo to GitHub (the repo must be **public**, or on a paid Netlify
+   plan — Netlify's free tier does not deploy private repos owned by an
+   organization).
+2. In [Netlify](https://app.netlify.com) → **Add new site → Import an existing
+   project → Deploy with GitHub**, pick this repository.
+3. Build settings are read from `netlify.toml` — no changes needed:
+   - Build command: `npm run build`
+   - Node: 20
+4. Click **Deploy**. Every push to `main` auto-deploys.
 
 After deploying, update `site.url` in [`src/data/site.ts`](src/data/site.ts) to
-your production domain so Open Graph/Twitter previews and the sitemap use correct
+the production domain so Open Graph/Twitter previews and the sitemap use correct
 absolute URLs.
 
 Alternatively, deploy from the CLI:
 
 ```bash
-npm i -g vercel
-vercel          # preview deploy
-vercel --prod   # production deploy
+npm i -g netlify-cli
+netlify login
+netlify init     # link the repo and create the site
+netlify deploy --prod
 ```
+
+> **Note on Next.js version:** Netlify blocks deploys on Next.js releases with
+> known critical CVEs. Keep `next` on a currently-patched release (this project
+> uses the security-backported 15.x line). If a deploy is ever blocked, bump
+> `next` to the latest patch and redeploy.
 
 ---
 
