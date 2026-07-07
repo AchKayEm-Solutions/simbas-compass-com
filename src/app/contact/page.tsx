@@ -10,9 +10,9 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Contact & Booking",
   description:
-    "Book Simba's Compass through Call of the Wild in the Brainerd Lakes Area — dog training, board & train, boarding, daycare, and pet sitting.",
+    "Book Simba's Compass K9 through Call of the Wild in the Brainerd Lakes Area — dog training, board & train, boarding, daycare, and pet sitting.",
   openGraph: {
-    title: "Contact & Booking | Simba's Compass",
+    title: "Contact & Booking | Simba's Compass K9",
     description:
       "Booking runs through Call of the Wild, serving the Brainerd Lakes Area.",
   },
@@ -48,7 +48,7 @@ export default function ContactPage() {
           <div>
             <h2 className="text-2xl">How to reach Savannah</h2>
             <p className="prose-warm mt-3 max-w-lg">
-              The easiest way to book Simba&apos;s Compass — for training,
+              The easiest way to book Simba&apos;s Compass K9 — for training,
               boarding, daycare, or pet sitting — is through {site.partner.name}.
               Their team handles availability, scheduling, and pricing.
             </p>
@@ -122,7 +122,7 @@ export default function ContactPage() {
                 <p className="font-semibold text-cream">What to expect</p>
                 <p className="mt-1">
                   A friendly conversation about your dog, your goals, and how
-                  Simba&apos;s Compass can help — no pressure, no judgment.
+                  Simba&apos;s Compass K9 can help — no pressure, no judgment.
                 </p>
               </div>
               <p className="mt-6 text-xs text-cream/50">

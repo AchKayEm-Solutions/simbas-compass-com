@@ -8,8 +8,8 @@
 // -----------------------------------------------------------------------------
 
 export const site = {
-  name: "Simba's Compass",
-  legalName: "Simba's Compass, LLC",
+  name: "Simba's Compass K9",
+  legalName: "Simba's Compass K9, LLC",
   tagline: "Dog training rooted in patience, trust, and animal care experience.",
   motto: "In honor of the dogs who guide us — and the ones who change us.",
   // Used for absolute URLs in metadata / Open Graph. Update to the real domain
@@ -18,8 +18,8 @@ export const site = {
   founder: "Savannah",
 
   seo: {
-    defaultTitle: "Simba's Compass | Dog Training",
-    titleTemplate: "%s | Simba's Compass",
+    defaultTitle: "Simba's Compass K9 | Dog Training",
+    titleTemplate: "%s | Simba's Compass K9",
     description:
       "Compassionate dog training focused on trust, confidence, and clear communication between dogs and their people.",
   },
@@ -35,7 +35,7 @@ export const site = {
     name: "Call of the Wild",
     href: "https://www.facebook.com/share/1D9njYaLL8/?mibextid=wwXIfr",
     blurb:
-      "Simba's Compass services are offered through Call of the Wild, who handle booking, availability, and scheduling.",
+      "Simba's Compass K9 services are offered through Call of the Wild, who handle booking, availability, and scheduling.",
   },
 
   socials: [

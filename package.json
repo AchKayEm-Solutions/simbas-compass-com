@@ -2,7 +2,7 @@
   "name": "simbas-compass-com",
   "version": "0.1.0",
   "private": true,
-  "description": "Marketing website for Simba's Compass, LLC — compassionate dog training.",
+  "description": "Marketing website for Simba's Compass K9, LLC — compassionate dog training.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

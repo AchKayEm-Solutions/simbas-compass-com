@@ -12,9 +12,9 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Training Philosophy",
   description:
-    "The Simba's Compass approach: balanced training catered to the dog in front of us — clear communication, structure, and confidence, tailored to each individual dog.",
+    "The Simba's Compass K9 approach: balanced training catered to the dog in front of us — clear communication, structure, and confidence, tailored to each individual dog.",
   openGraph: {
-    title: "Training Philosophy | Simba's Compass",
+    title: "Training Philosophy | Simba's Compass K9",
     description:
       "Balanced dog training, tailored to the dog in front of us. No two dogs are the same, so no two plans are either.",
   },
@@ -114,7 +114,7 @@ export default function PhilosophyPage() {
             <p>
               Good training is a partnership, and results depend on many things —
               your dog, your consistency, and your unique situation. For that
-              reason, Simba&apos;s Compass doesn&apos;t promise guaranteed
+              reason, Simba&apos;s Compass K9 doesn&apos;t promise guaranteed
               outcomes or quick fixes.
             </p>
             <p>

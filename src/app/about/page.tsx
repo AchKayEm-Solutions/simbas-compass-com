@@ -14,11 +14,11 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "About Savannah",
   description:
-    "Meet Savannah, founder of Simba's Compass — six years as a veterinary assistant, pursuing LVT licensure, and finishing her Certified Dog Trainer course through Liberty K9 Academy.",
+    "Meet Savannah, founder of Simba's Compass K9 — six years as a veterinary assistant, pursuing LVT licensure, and finishing her Certified Dog Trainer course through Liberty K9 Academy.",
   openGraph: {
-    title: "About Savannah | Simba's Compass",
+    title: "About Savannah | Simba's Compass K9",
     description:
-      "Meet Savannah — veterinary assistant of six years, lifelong animal lover, and the person behind Simba's Compass.",
+      "Meet Savannah — veterinary assistant of six years, lifelong animal lover, and the person behind Simba's Compass K9.",
     images: [images.portrait.src],
   },
 };
@@ -47,7 +47,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="Meet Savannah"
-        description="The person behind Simba's Compass — grounded in real animal-care experience, and driven by a genuine love for dogs and the people who love them."
+        description="The person behind Simba's Compass K9 — grounded in real animal-care experience, and driven by a genuine love for dogs and the people who love them."
       />
 
       {/* Intro + portrait */}
@@ -69,7 +69,7 @@ export default function AboutPage() {
               She has a real strength with animals who have medical needs.
             </p>
             <p>
-              That experience is the foundation of Simba&apos;s Compass. Training
+              That experience is the foundation of Simba&apos;s Compass K9. Training
               here isn&apos;t about commands for their own sake; it&apos;s about
               understanding each dog as an individual and helping them feel
               secure, capable, and understood.
@@ -89,7 +89,7 @@ export default function AboutPage() {
         <SectionHeading
           eyebrow="Experience & education"
           title="A background built on real animal care"
-          description="Simba's Compass grows out of years of hands-on work, not a weekend course."
+          description="Simba's Compass K9 grows out of years of hands-on work, not a weekend course."
           className="mb-12"
         />
         <div className="grid gap-6 md:grid-cols-3">
@@ -146,7 +146,7 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      {/* The meaning behind Simba's Compass */}
+      {/* The meaning behind Simba's Compass K9 */}
       <Section tone="forest">
         <div className="mx-auto max-w-3xl text-center">
           <span className="mx-auto flex h-32 w-32 items-center justify-center rounded-3xl bg-white p-3 shadow-lift ring-4 ring-gold/30">
@@ -159,7 +159,7 @@ export default function AboutPage() {
             />
           </span>
           <h2 className="mt-6 text-3xl text-cream sm:text-4xl">
-            The Meaning Behind Simba&apos;s Compass
+            The Meaning Behind Simba&apos;s Compass K9
           </h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-cream/80">
             <p>

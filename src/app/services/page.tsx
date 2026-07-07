@@ -12,9 +12,9 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Dog training, boarding, daycare, in-home pet sitting, and drop-in visits from Savannah at Simba's Compass — including board & train and specialized care for pets with medical needs. Booked through Call of the Wild.",
+    "Dog training, boarding, daycare, in-home pet sitting, and drop-in visits from Savannah at Simba's Compass K9 — including board & train and specialized care for pets with medical needs. Booked through Call of the Wild.",
   openGraph: {
-    title: "Services | Simba's Compass",
+    title: "Services | Simba's Compass K9",
     description:
       "Board & train, boarding, daycare, pet sitting, and more — offered through Call of the Wild in the Brainerd Lakes Area.",
   },

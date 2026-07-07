@@ -18,20 +18,10 @@ export function ServiceCard({ service }: { service: Service }) {
       <h3 className="text-xl">{service.title}</h3>
       <p className="prose-warm mt-2.5 flex-1 text-[15px]">{service.description}</p>
 
-      <dl className="mt-5 space-y-3 border-t border-forest/10 pt-5 text-sm">
+      <dl className="mt-5 border-t border-forest/10 pt-5 text-sm">
         <div>
           <dt className="font-semibold text-forest">Best for</dt>
           <dd className="mt-0.5 text-charcoal-light">{service.bestFor}</dd>
-        </div>
-        <div className="flex items-center gap-2">
-          <span
-            className="inline-block h-1.5 w-1.5 rounded-full bg-caramel"
-            aria-hidden="true"
-          />
-          <dt className="sr-only">Pricing and availability</dt>
-          <dd className="font-medium uppercase tracking-wide text-caramel-dark">
-            {service.status}
-          </dd>
         </div>
       </dl>
     </article>

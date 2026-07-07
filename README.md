@@ -1,6 +1,6 @@
-# Simba's Compass — Website
+# Simba's Compass K9 — Website
 
-A warm, modern marketing site for **Simba's Compass, LLC**, a compassionate dog
+A warm, modern marketing site for **Simba's Compass K9, LLC**, a compassionate dog
 training company founded by Savannah.
 
 Built as a static, zero-config Next.js site — no forms, logins, payments, booking,
@@ -181,5 +181,5 @@ Update everything in `src/data/site.ts`, `src/data/services.ts`, and
 
 ---
 
-© Simba's Compass, LLC. Dog training rooted in patience, trust, and animal care
+© Simba's Compass K9, LLC. Dog training rooted in patience, trust, and animal care
 experience.

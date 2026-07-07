@@ -70,7 +70,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Intro to Simba's Compass */}
+      {/* Intro to Simba's Compass K9 */}
       <Section tone="cream">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal from="left">
@@ -78,9 +78,9 @@ export default function HomePage() {
           </Reveal>
           <div>
             <SectionHeading
-              eyebrow="Welcome to Simba's Compass"
+              eyebrow="Welcome to Simba's Compass K9"
               title="Training that starts with trust"
-              description="Simba's Compass is a small, local dog training practice founded by Savannah — built on real animal-care experience and a deep love for dogs."
+              description="Simba's Compass K9 is a small, local dog training practice founded by Savannah — built on real animal-care experience and a deep love for dogs."
             />
             <div className="prose-warm mt-6 space-y-4">
               <p>
@@ -111,7 +111,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="How we can help"
             title="Featured services"
-            description="A few of the ways Savannah can support you and your dog — from board & train to boarding, daycare, and pet sitting. Offered through Call of the Wild."
+            description="A few of the ways Savannah can support you and your dog — from board & train to boarding, daycare, and pet sitting."
           />
           <Reveal delay={100} className="hidden sm:block">
             <Button href="/services" variant="secondary">
@@ -135,11 +135,11 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Why Simba's Compass */}
+      {/* Why Simba's Compass K9 */}
       <Section tone="cream">
         <SectionHeading
           align="center"
-          eyebrow="Why Simba's Compass?"
+          eyebrow="Why Simba's Compass K9?"
           title="A calmer, kinder path forward"
           description="Practical results matter — but so does how you get there. Here's what guides every session."
           className="mb-12"
@@ -189,7 +189,7 @@ export default function HomePage() {
             </div>
             <div className="mt-8">
               <Button href="/about" variant="secondaryLight">
-                The meaning behind Simba&apos;s Compass
+                The meaning behind Simba&apos;s Compass K9
               </Button>
             </div>
           </div>
@@ -222,7 +222,7 @@ export default function HomePage() {
             to feel confident, too.&rdquo;
           </p>
           <p className="mt-4 text-sm font-semibold uppercase tracking-[0.18em] text-charcoal-muted">
-            — Savannah, founder of Simba&apos;s Compass
+            — Savannah, founder of Simba&apos;s Compass K9
           </p>
         </Reveal>
       </Section>

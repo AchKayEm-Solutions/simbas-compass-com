@@ -10,11 +10,11 @@ import { galleryImages } from "@/data/images";
 export const metadata: Metadata = {
   title: "Gallery",
   description:
-    "A look at Savannah and the animals she works with — warm, real moments from the world of Simba's Compass dog training.",
+    "A look at Savannah and the animals she works with — warm, real moments from the world of Simba's Compass K9 dog training.",
   openGraph: {
-    title: "Gallery | Simba's Compass",
+    title: "Gallery | Simba's Compass K9",
     description:
-      "Warm, real moments of Savannah with dogs and animals from Simba's Compass.",
+      "Warm, real moments of Savannah with dogs and animals from Simba's Compass K9.",
   },
 };
 

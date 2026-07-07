@@ -61,10 +61,10 @@ export const images = {
     width: 1366,
     height: 2048,
   },
-  // The Simba's Compass logo (compass emblem with a person and two dogs).
+  // The Simba's Compass K9 logo (compass emblem with a person and two dogs).
   logo: {
     src: `${IMG}/logo.jpg`,
-    alt: "Simba's Compass logo — a compass with a person walking two dogs",
+    alt: "Simba's Compass K9 logo — a compass with a person walking two dogs",
     width: 360,
     height: 360,
   },
@@ -78,7 +78,7 @@ export const images = {
   // Social share image (Open Graph / Twitter). Reuses the warm meadow photo.
   ogDefault: {
     src: `${IMG}/animal-care.jpg`,
-    alt: "Simba's Compass — Savannah with a dog in a sunlit field",
+    alt: "Simba's Compass K9 — Savannah with a dog in a sunlit field",
     width: 2048,
     height: 1366,
   },
