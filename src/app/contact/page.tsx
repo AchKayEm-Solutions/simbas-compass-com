@@ -4,7 +4,8 @@ import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/Button";
 import { Compass } from "@/components/Compass";
-import { MapPinIcon, PawIcon } from "@/components/Icons";
+import { MailIcon, MapPinIcon, PawIcon } from "@/components/Icons";
+import { SectionHeading } from "@/components/SectionHeading";
 import { site } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -20,6 +21,19 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   const details = [
+    {
+      icon: <MailIcon className="h-6 w-6" />,
+      label: "Email",
+      value: (
+        <a
+          href={`mailto:${site.contact.email}`}
+          className="underline-offset-4 transition-colors hover:text-forest-light hover:underline"
+        >
+          {site.contact.email}
+        </a>
+      ),
+      note: "Reaches Savannah directly",
+    },
     {
       icon: <MapPinIcon className="h-6 w-6" />,
       label: "Service area",
@@ -117,6 +131,15 @@ export default function ContactPage() {
                 >
                   Book through {site.partner.name}
                 </Button>
+                <p className="mt-4 text-center text-sm text-cream/75">
+                  …or contact Savannah directly at{" "}
+                  <a
+                    href={`mailto:${site.contact.email}`}
+                    className="font-medium text-cream underline underline-offset-4 transition-colors hover:text-gold-light"
+                  >
+                    {site.contact.email}
+                  </a>
+                </p>
               </div>
               <div className="mt-6 rounded-2xl bg-cream/10 p-4 text-sm text-cream/75 ring-1 ring-cream/15">
                 <p className="font-semibold text-cream">What to expect</p>
@@ -131,6 +154,27 @@ export default function ContactPage() {
             </div>
           </Reveal>
         </div>
+      </Section>
+
+      {/* Service-area map */}
+      <Section tone="white" spacing="md">
+        <SectionHeading
+          eyebrow="Where to find us"
+          title="Serving the Brainerd Lakes Area"
+          description={`Simba's Compass K9 works with dogs and their people across the ${site.contact.serviceArea} in ${site.contact.serviceAreaNote}.`}
+        />
+        <Reveal className="mt-10">
+          <div className="overflow-hidden rounded-4xl shadow-card ring-1 ring-forest/10">
+            <iframe
+              title={`Map of the ${site.contact.serviceArea}, ${site.contact.serviceAreaNote}`}
+              src={site.contact.mapEmbedSrc}
+              className="h-80 w-full border-0 sm:h-[26rem]"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </Reveal>
       </Section>
     </>
   );

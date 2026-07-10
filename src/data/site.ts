@@ -12,9 +12,8 @@ export const site = {
   legalName: "Simba's Compass K9, LLC",
   tagline: "Dog training rooted in patience, trust, and animal care experience.",
   motto: "In honor of the dogs who guide us — and the ones who change us.",
-  // Used for absolute URLs in metadata / Open Graph. Update to the real domain
-  // once it's live on Vercel.
-  url: "https://simbas-compass.com",
+  // Used for absolute URLs in metadata / Open Graph.
+  url: "https://simbascompassk9.com",
   founder: "Savannah",
 
   seo: {
@@ -25,8 +24,12 @@ export const site = {
   },
 
   contact: {
+    email: "simbascompassk9@gmail.com",
     serviceArea: "Brainerd Lakes Area",
     serviceAreaNote: "Central Minnesota",
+    // Keyless Google Maps embed of the service area (no API key required).
+    mapEmbedSrc:
+      "https://www.google.com/maps?q=Brainerd+Lakes+Area,+Minnesota&z=9&output=embed",
   },
 
   // Savannah offers her services through Call of the Wild, who handle booking
